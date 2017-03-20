@@ -1,0 +1,29 @@
+-abinitio
+ -relax	
+ -fastrelax	
+ -increase_cycles 1
+ -rg_reweight 0.25
+
+-in
+ -file
+  -fasta [fasta file]
+  -frag3 [file_for_frag3] 
+  -frag9 [file_for_frag9]
+
+ -path
+  -database $rosetta_path/main/database/
+
+-out
+ -nstruct 5000	
+ -file
+  -fullatom
+  -silent folding_silent.out	
+
+-constraints
+  -cst_file xl
+  -cst_weight 1
+  -cst_fa_file xl
+  -cst_fa_weight 1
+
+
+#for fragment file of 3-mer and 9-mer see http://robetta.bakerlab.org/fragmentsubmit.jsp
