@@ -14,7 +14,7 @@
   -database $rosetta_path/main/database/
 
 -out
- -nstruct 5000	
+ -nstruct [number of decoys it is going to generate]	
  -file
   -fullatom
   -silent folding_silent.out	
