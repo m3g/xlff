@@ -51,9 +51,13 @@ In this format each "[ ]" refers to a user-defined variable.
 For example:
 
 [Atom1] = CA or CB
+
 [ResID1] = 1 or 2, etc
+
 [min] = is the minimum valeu of x for which [many number] has been computed
+
 [max] = is the maximum value of x for which [many numbers] has been computed
+
 [many numbers] = values of func for x from [min] to [max] spaced out by 0.1
 
 Some common links have their statistical potential curves defined.
@@ -88,8 +92,8 @@ SE	  	0.0	3.0	7.7	SE.17.xl
 
 ## Additional comments
 
--L[XL] stands for the spacer arm lenght of the cross-linker. For example, L[XL] = 11.5 A refers to DSS or 1,6-hexanediamine, L[XL] = 7.7 A refers to DSG or 1,3-propanediamine and L[XL] = 0 A refers to zero lenght species.
+- L[XL] stands for the spacer arm lenght of the cross-linker. For example, L[XL] = 11.5 A refers to DSS or 1,6-hexanediamine, L[XL] = 7.7 A refers to DSG or 1,3-propanediamine and L[XL] = 0 A refers to zero lenght species.
 
--f(x) is computed in the interval between [min] and [max] as an approximation of the true function by the closest value of the Euclidean distance measured. Above x = [max] a linear penalization is computed, that is, f(x) = (x - xmax_ ) if x > x_max. The derivative is computed as the angular coeficient of the linear curve described by the interpolation of the two closest tabulated values from Euclidean distance measured, x.
+- f(x) is computed in the interval between [min] and [max] as an approximation of the true function by the closest value of the Euclidean distance measured. Above x = [max] a linear penalization is computed, that is, f(x) = (x - xmax_ ) if x > x_max. The derivative is computed as the angular coeficient of the linear curve described by the interpolation of the two closest tabulated values from Euclidean distance measured, x.
 
 
