@@ -1,6 +1,7 @@
 # Implementing statistical potential on Rosetta
 
 **Last edited: 03/20/2017 by Állan Ferrari** 
+
 _Have a doubt? Some suggestion? Contact: ajrferrari@gmail.com_
 
 A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2017.
@@ -9,7 +10,7 @@ The statistical potential for cross-linking / mass spectrometry derived constrai
 
 Although ETABLE func is a default Rosetta's scoring function, it needs to be enabled. To do so, two files need to be modified. 
 
-1) Go do the scoring fuctions directory
+1) Go to the scoring fuctions directory 
 
 > $ cd ~rosetta_path/main/source/src/core/scoring/func/
 
@@ -39,7 +40,7 @@ Next section explains the general format of a constraint file. A file with the o
 
 >$~/files/example
 
-# General explanation
+## General explanation
 
 The general input format in a constraint file applying ETABLE func is:
 
