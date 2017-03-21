@@ -49,17 +49,13 @@ The general input format in a constraint file applying ETABLE func is:
 In this format each "[ ]" refers to a user-defined variable.
 
 For example:
-
+```
 [Atom1] = CA or CB
-
 [ResID1] = 1 or 2, etc
-
 [min] = is the minimum valeu of x for which [many number] has been computed
-
 [max] = is the maximum value of x for which [many numbers] has been computed
-
 [many numbers] = values of func for x from [min] to [max] spaced out by 0.1
-
+```
 Some common links have their statistical potential curves defined.
 Each [many numbers] file to each of the residues pairs is present in $/files/xl
 A script to create a constraint file for Rosetta application is avaiable as "xl_generator" in $file/xl.
