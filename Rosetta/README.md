@@ -1,6 +1,6 @@
 # Implementing statistical potential on Rosetta
 
-**Last edited: 03/20/2017 by Állan Ferrari** 
+**Last edited: 03/21/2017 by Állan Ferrari** 
 
 _Have a doubt? Some suggestion? Contact: ajrferrari@gmail.com_
 
@@ -63,7 +63,7 @@ A script to create a constraint file for Rosetta application is avaiable as "xl_
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
 
 ```
-**Link_Type	L[XL]	[min]	[max]	File ($~/xl directory)**
+Link_Type	L[XL]	[min]	[max]	File ($~/xl directory)
 KK	  	11.5	3.0	17.8	KK_l.17.xl
 KS	  	11.5	3.0	15.8	KS_l.17.xl
 SS	  	11.5	3.0	13.4	SS_l.17.xl
