@@ -1,5 +1,5 @@
-# Script to generate inputfile to apply statistical potential in Rosetta given a set of constraints in the followting format OBSERVED RES1 CHAIN1 RESNUM1 RES2 CHAIN2 RESNUM2 ANYTHING (separeted for tab, otherwise edit line 12)
-#run with python2.7 xl_generator.py
+# Script to generate inputfile to apply statistical potential in Rosetta given a set of constraints in the followting format OBSERVED RES1 CHAIN1 RESNUM1 RES2 CHAIN2 RESNUM2 ANYTHING (separeted for tab, otherwise edit line 13)
+#run with ~python2.7 xl_generator.py
 #PS. It just work with the zerolength, BS3/DSS and 1,6-hexanediamine. Does not work with short crosslinker propanediamine and BSG.
 
 filename = raw_input("Provide the inputfile name: ")
