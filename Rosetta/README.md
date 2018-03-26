@@ -65,11 +65,7 @@ Provide a file in the required format. Example:
 
 
     observed LYS A 123 SER A 14 short
-
-
     observed SER A 15 ASP A 24 zl
-
-
     observed GLU A 17 ASP A 44 long
 
 
