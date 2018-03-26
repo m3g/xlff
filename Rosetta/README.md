@@ -1,8 +1,6 @@
 # Implementing statistical potential on Rosetta
 
-**Last edited: 03/21/2017 by Állan Ferrari** 
-
-_Have a doubt? Some suggestion? Contact: ajrferrari@gmail.com_
+_Have a question? Some suggestion? Contact: ajrferrari@gmail.com_
 
 A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2017.
 
@@ -58,7 +56,17 @@ For example:
 ```
 Some common links have their statistical potential curves defined.
 Each [many numbers] file to each of the residues pairs is present in $/files/xl
-A script to create a constraint file for Rosetta application is avaiable as "xl_generator" in $file/xl.
+
+A script to create a constraint file for Rosetta application is avaiable as "xl_generator.py" in $file/xl.
+
+```
+$ python2.7 xl_generator.py
+```
+Provide a file in the required format. Example:
+
+observed LYS A 123 SER A 14 short
+observed SER A 15 ASP A 24 zl
+observed GLU A 17 ASP A 44 long
 
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
 

@@ -38,39 +38,6 @@ experiment Diamina
   linktype   GLU     all     all      CB          ASP     all     all       CB        14.3
   linktype   ASP     all     all      CB          ASP     all     all       CB        13.5 
 
-observed ASP A 22 ASP A 24
-observed ASP A 22 GLU A 28
-observed ASP A 24 GLU A 28
-observed ASP A 38 ASP A 104
-observed ASP A 3 GLU A 111
-observed ASP A 3 GLU A 4
-observed ASP A 3 GLU A 9
-observed ASP A 75 ASP A 115
-observed GLU A 111 ASP A 115
-observed GLU A 13 GLU  A 111
-observed GLU A 13 GLU A 20
-observed GLU A 13 GLU A 28
-observed GLU A 20 ASP A 22
-observed GLU A 20 ASP A 24
-observed GLU A 20 GLU A 28
-observed GLU A 20 GLU A 66
-observed GLU A 28 GLU A 111
-observed GLU A 28 GLU A 32
-observed GLU A 32 ASP A 115
-observed GLU A 32 GLU A 111
-observed GLU A 32 GLU A 46
-observed GLU A 37 ASP A 115
-observed GLU A 37 ASP A 38
-observed GLU A 37 GLU A 46
-observed GLU A 37 GLU A 53
-observed GLU A 46 ASP A 115
-observed GLU A 46 GLU A 53
-observed GLU A 4 GLU A 9
-observed GLU A 62 GLU A 66
-observed GLU A 62 GLU A 86
-observed GLU A 66 GLU A 86
-observed GLU A 9 GLU  A 111
-observed GLU A 9 GLU A 13
 
 
 end experiment Diamina
@@ -98,17 +65,6 @@ experiment DSS
   linktype   LYS     all     all      CB          SER     all     all       CB        15.8
   linktype   SER     all     all      CB          SER     all     all       CB        13.4
 
-observed LYS A 17 LYS A 113
-observed LYS A 42 SER A 57
-observed LYS A 6 LYS A 113
-observed LYS A 6 LYS A 17
-observed LYS A 6 LYS A 8
-observed LYS A 77 LYS A 113
-observed LYS A 77 SER A 116
-observed LYS A 77 SER A 78
-observed LYS A 8 SER A 71
-observed SER A 71 SER A 78
-observed SER A 78 SER A 116
 
 end experiment DSS
 
@@ -130,7 +86,7 @@ kvdw  2.          # For constant of overlap function
 
 ntrial 200  # Maximum number of trials for best link search
 nbest 5     # Number of times the same best link is found until satisfied
-maxfunc 50  # Maximum number of function evaluations of CG-Newton
+maxfunc 100  # Maximum number of function evaluations of CG-Newton
 maxcg 20    # Maximum number of CG iterations
 seed random # Seed for random number generator (random or integer number)
 
