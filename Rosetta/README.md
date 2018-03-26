@@ -1,7 +1,5 @@
 # Implementing statistical potential on Rosetta
 
-**Last edited: 03/21/2017 by Állan Ferrari** 
-
 _Have a doubt? Some suggestion? Contact: ajrferrari@gmail.com_
 
 A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2017.
