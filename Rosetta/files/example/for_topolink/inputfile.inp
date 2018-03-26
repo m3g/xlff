@@ -30,7 +30,8 @@ scorecut 0.d0
 
 # Cross-links observed :
 
-experiment Diamina
+
+experiment 1,6-diaminehaxane
 
   # Possible types of cross-links and maximum distances
   #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
@@ -40,22 +41,34 @@ experiment Diamina
 
 
 
-end experiment Diamina
+end experiment 1,6-diaminehaxane
 
-
-experiment zerolength
+experiment 1,3-diaminepropane
 
   # Possible types of cross-links and maximum distances
   #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
-#  linktype   ASP     all     all      CB          LYS     all     all       CB        11.4
-#  linktype   GLU     all     all      CB          LYS     all     all       CB        12.7
-#  linktype   GLU     all     all      CB          SER     all     all       CB         8.8
-#  linktype   ASP     all     all      CB          SER     all     all       CB         7.5
+  linktype   GLU     all     all      CB          GLU     all     all       CB        11.6
+  linktype   GLU     all     all      CB          ASP     all     all       CB        10.7
+  linktype   ASP     all     all      CB          ASP     all     all       CB        9.8 
 
 
-end experiment zerolength
 
-experiment DSS
+end experiment 1,3-diaminepropane
+
+experiment zero-length
+
+  # Possible types of cross-links and maximum distances
+  #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
+  linktype   ASP     all     all      CB          LYS     all     all       CB        9.7
+  linktype   GLU     all     all      CB          LYS     all     all       CB        10.5
+  linktype   GLU     all     all      CB          SER     all     all       CB        7.7
+  linktype   ASP     all     all      CB          SER     all     all       CB        7.0
+
+
+end experiment zero-length
+
+
+experiment DSS/BS3
 
   # Possible types of cross-links and maximum distances
   #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
@@ -66,8 +79,21 @@ experiment DSS
   linktype   SER     all     all      CB          SER     all     all       CB        13.4
 
 
-end experiment DSS
+end experiment DSS/BS3
 
+
+experiment DSG
+
+  # Possible types of cross-links and maximum distances
+  #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
+ # linktype   MET      A       1       N           LYS     all     all       CB        16.9
+ # linktype   MET      A       1       N           SER     all     all       CB        13.0
+  linktype   LYS     all     all      CB          LYS     all     all       CB        15.2
+  linktype   LYS     all     all      CB          SER     all     all       CB        12.4
+  linktype   SER     all     all      CB          SER     all     all       CB        10.0
+
+
+end experiment DSG
 # Optional parameters 
 
 pgood 0.70 # Probability of observing a link which is within link reach
