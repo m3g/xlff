@@ -34,9 +34,9 @@ to do it.
 
 If no *error message* appears, you are ready to run a job using the statistical potential.
 
-Next section explains the general format of a constraint file. A file with the options used to run SalBIII structure prediction is provided in 
+Next section explains the general format of a constraint file. A file with the options used to run SalBIII protein structure prediction is provided in 
 
->$~/files/example
+>$~/files/example/flags
 
 ## General explanation
 
