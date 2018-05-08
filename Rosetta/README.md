@@ -48,25 +48,28 @@ In this format each "[ ]" refers to a user-defined variable.
 
 For example:
 ```
-[Atom1] = CA or CB
+[Atom1] = CB
 [ResID1] = 1 or 2, etc
 [min] = is the minimum valeu of x for which [many number] has been computed
 [max] = is the maximum value of x for which [many numbers] has been computed
 [many numbers] = values of func for x from [min] to [max] spaced out by 0.1
 ```
 Some common links have their statistical potential curves defined.
-Each [many numbers] file to each of the residues pairs is present in $/files/xl
+Each [many numbers] file to each of the residues pairs can be found in $/files/xl
 
-A script to create a constraint file for Rosetta application is avaiable as "xl_generator.py" in $file/xl.
+Also, a script to create a constraint file for Rosetta application is avaiable as "xl_generator.py" in $file/xl. Use:
 
->$ python2.7 xl_generator.py
+>$ python2.7 xl_generator.py $input_filename [yes/no]
 
-Provide a file in the required format. Example:
+Provide a file ($input_filename) in the required format. Example:
 
 
     observed LYS A 123 SER A 14 short
     observed SER A 15 ASP A 24 zl
     observed GLU A 17 ASP A 44 long
+
+Type yes if you have used shorter links (BSG / 1,3-propaneamine). Type no if only BS3/DSS / 1,6-hexanediamine were used.
+If only BS3/DSS and / or 1,6-hexanediamine were used, column 7 can be omitted in the input file. 
 
 
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
