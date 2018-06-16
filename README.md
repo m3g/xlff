@@ -8,11 +8,11 @@ The following table contains information about reactive pairs towards each linke
 More datails can be found in Rosetta implementation document.
 
 ```
-Linker_name 				Link_Type L[XL] [min] [max] 
-DSS/BS3 						KK        11.5 	3.0 17.8  
-DSS/BS3 						KS        11.5	3.0 15.8  
-DSS/BS3 						SS        11.5 	3.0 13.4  
-1,6-diaminehexane 	EE				11.5 	3.0 15.1  
+Linker_name		Link_Type L[XL] [min] [max] 
+DSS/BS3		KK		11.5 	3.0 17.8  
+DSS/BS3		KS		11.5	3.0 15.8  
+DSS/BS3		SS		11.5 	3.0 13.4  
+1,6-diaminehexane		EE				11.5 	3.0 15.1  
 1,6-diaminehexane 	DE 				11.5 	3.0 14.3  
 1,6-diaminehexane 	DD 				11.5 	3.0 13.5  
 
