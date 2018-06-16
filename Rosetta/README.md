@@ -4,6 +4,8 @@ _Have a question? Some suggestion? Contact: ajrferrari@gmail.com_
 
 A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2018.
 
+Cite: https://doi.org/10.26434/chemrxiv.6030563.v1 (preprint version)
+
 The statistical potential for cross-linking / mass spectrometry derived constraints is implement in Rosetta numerically. This is done by taking advantage on a constraint function called in Rosetta ETABLE. ETABLE describes any function as a table of values which can be interpolated in order to approximate the function true behavior (See General explanation below).
 
 Although ETABLE func is a default Rosetta's scoring function, it needs to be enabled. To do so, two files need to be modified. 
