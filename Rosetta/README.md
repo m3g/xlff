@@ -75,27 +75,27 @@ If only BS3/DSS and / or 1,6-hexanediamine were used, column 7 can be omitted in
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
 
 ```
-Linker_name					Link_Type	L[XL]	[min]	[max]	File ($~/xl directory)
-DSS/BS3							KK	  		11.5	3.0		17.8	KK_l.17.xl
-DSS/BS3							KS				11.5	3.0		15.8	KS_l.17.xl
-DSS/BS3							SS	  		11.5	3.0		13.4	SS_l.17.xl
-1,6-diaminehexane		EE	  		11.5	3.0		15.1	EE_l.17.xl
-1,6-diaminehexane		DE	  		11.5	3.0		14.3	DE_l.17.xl
-1,6-diaminehexane		DD	  		11.5	3.0		13.5	DD_l.17.xl
+Linker_name	      Link_Type L[XL] [min] [max] 
+DSS/BS3		      KK        11.5  3.0   17.8  
+DSS/BS3		      KS	11.5  3.0   15.8  
+DSS/BS3		      SS	11.5  3.0   13.4  
+1,6-diaminehexane     EE        11.5  3.0   15.1  
+1,6-diaminehexane     DE	11.5  3.0   14.3  
+1,6-diaminehexane     DD	11.5  3.0   13.5  
 
 
-DSG									KK	  		7.7		3.0		15.2	KK_s.17.xl
-DSG									KS	  		7.7		3.0		12.4	KS_s.17.xl
-DSG									SS	  		7.7		3.0		10.0	SS_s.17.xl
-1,3-diaminepropane	EE	  		7.7		3.0		11.6	EE_s.17.xl
-1,3-diaminepropane	DE	  		7.7		3.0		10.7	DE_s.17.xl
-1,3-diaminepropane	DD	  		7.7		3.0		9.8		DD_s.17.xl
+DSG                   KK        7.7   3.0   15.2  
+DSG                   KS        7.7   3.0   12.4  
+DSG                   SS        7.7   3.0   10.0  
+1,3-diaminepropane    EE        7.7   3.0   11.6  
+1,3-diaminepropane    DE        7.7   3.0   10.7  
+1,3-diaminepropane    DD        7.7   3.0   9.8   
 
 
-zero-length					KD	  		0.0		3.0		9.7		KD.17.xl
-zero-length					KE	  		0.0		3.0		10.5	KE.17.xl
-zero-length					SD	  		0.0		3.0		7.0		SD.17.xl
-zero-length					SE	  		0.0		3.0		7.7		SE.17.xl
+zero-length           KD        0.0   3.0   9.7   
+zero-length           KE        0.0   3.0   10.5  
+zero-length           SD        0.0   3.0   7.0   
+zero-length           SE        0.0   3.0   7.7   
 ```
 
 ## Additional comments
