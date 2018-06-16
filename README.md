@@ -1,6 +1,8 @@
 # xlff
 Statistical force-field for modeling protein structure using chemical cross-linking distance constraints
 
+More details: https://doi.org/10.26434/chemrxiv.6030563.v1 (preprint version)
+
 The following linkers have their potential curves defined so far: DSS/BS3, DSG, 1,6-hexanediamine, 1,3-propanediamine and zero-length species. 
 
 The following table contains information about reactive pairs towards each linker, linker length (L[XL]), min and max distances observed from the statistical analysis.
