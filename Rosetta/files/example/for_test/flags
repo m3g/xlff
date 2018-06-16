@@ -1,0 +1,30 @@
+-abinitio
+ -relax	
+ -fastrelax	
+ -increase_cycles 1
+ -rg_reweight 0.25
+
+-in
+ -file
+  -fasta salbiii.fasta
+  -frag3 fragments/aat000_03_05.200_v1_3 
+  -frag9 fragments/aat000_09_05.200_v1_3
+
+ -path
+  -database $rosetta_path/main/database/ # replace here your database path in rosetta.
+
+-out
+ -nstruct 1
+ -file
+  -fullatom
+  -silent folding_silent.out	
+
+-constraints
+  -cst_file xl
+  -cst_weight 1
+  -cst_fa_file xl
+  -cst_fa_weight 1
+
+
+#for fragment file of 3-mer and 9-mer see http://robetta.bakerlab.org/fragmentsubmit.jsp
+#it is recommended to set increase_cycles to 5. From my experience, I did not see much improvement from 5 to 10.

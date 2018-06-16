@@ -1,12 +1,10 @@
 # Implementing statistical potential on Rosetta
 
-**Last edited: 03/21/2017 by Állan Ferrari** 
+_Have a question? Some suggestion? Contact: ajrferrari@gmail.com_
 
-_Have a doubt? Some suggestion? Contact: ajrferrari@gmail.com_
+A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2018.
 
-A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2017.
-
-The statistical potential for cross-linking / mass spectrometry derived constraints is implement in Rosetta numerically. This is done by taking advantage on a constraint function called in Rosetta ETABLE.ETABLE describes any function as a table of values which can be interpolated in order to approximate the function true behavior (See General explanation below).
+The statistical potential for cross-linking / mass spectrometry derived constraints is implement in Rosetta numerically. This is done by taking advantage on a constraint function called in Rosetta ETABLE. ETABLE describes any function as a table of values which can be interpolated in order to approximate the function true behavior (See General explanation below).
 
 Although ETABLE func is a default Rosetta's scoring function, it needs to be enabled. To do so, two files need to be modified. 
 
@@ -20,7 +18,7 @@ Although ETABLE func is a default Rosetta's scoring function, it needs to be ena
 	
 This will replace both file in the directory. If you want to keep default files, it is recommended to rename both of them first. 
 
-The FuncFactory.cc file just add to the default file two lines specifying that EtableFunc.cc should be considered in Rosetta applications. EtableFunc.cc brings the definitions of f(x) and its derivatived, which is not present in the default file, that is, it is user-defined. 
+The FuncFactory.cc file just add to the default file two lines specifying that EtableFunc.cc should be considered in Rosetta applications. EtableFunc.cc brings the definitions of f(x) and its derivative, which is not present in the default file, that is, it is user-defined. 
 
 After copy those two files, it is necesary to recompile Rosetta. 
 
@@ -36,9 +34,9 @@ to do it.
 
 If no *error message* appears, you are ready to run a job using the statistical potential.
 
-Next section explains the general format of a constraint file. A file with the options used to run SalBIII structure prediction is provided in 
+Next section explains the general format of a constraint file. A file with the options used to run SalBIII protein structure prediction is provided in 
 
->$~/files/example
+>$~/files/example/flags
 
 ## General explanation
 
@@ -50,15 +48,29 @@ In this format each "[ ]" refers to a user-defined variable.
 
 For example:
 ```
-[Atom1] = CA or CB
+[Atom1] = CB
 [ResID1] = 1 or 2, etc
 [min] = is the minimum valeu of x for which [many number] has been computed
 [max] = is the maximum value of x for which [many numbers] has been computed
 [many numbers] = values of func for x from [min] to [max] spaced out by 0.1
 ```
 Some common links have their statistical potential curves defined.
-Each [many numbers] file to each of the residues pairs is present in $/files/xl
-A script to create a constraint file for Rosetta application is avaiable as "xl_generator" in $file/xl.
+Each [many numbers] file to each of the residues pairs can be found in $/files/xl
+
+Also, a script to create a constraint file for Rosetta application is avaiable as "xl_generator.py" in $file/xl. Use:
+
+>$ python2.7 xl_generator.py $input_filename [yes/no]
+
+Provide a file ($input_filename) in the required format. Example:
+
+
+    observed LYS A 123 SER A 14 short
+    observed SER A 15 ASP A 24 zl
+    observed GLU A 17 ASP A 44 long
+
+Type yes if you have used shorter links (BSG / 1,3-propaneamine). Type no if only BS3/DSS / 1,6-hexanediamine were used.
+If only BS3/DSS and / or 1,6-hexanediamine were used, column 7 can be omitted in the input file. 
+
 
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
 

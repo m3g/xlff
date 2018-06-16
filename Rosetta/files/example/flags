@@ -27,3 +27,4 @@
 
 
 #for fragment file of 3-mer and 9-mer see http://robetta.bakerlab.org/fragmentsubmit.jsp
+#it is recommended to set increase_cycles to 5. From my experience, I did not see much improvement from 5 to 10.
