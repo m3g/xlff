@@ -34,7 +34,7 @@ and run
 
 to do it. 
 
-If no *error message* appears, you are ready to run a job using the statistical potential.
+If no *error message* pops up, you are ready to run a job using the statistical potential.
 
 Next section explains the general format of a constraint file. A file with the options used to run SalBIII protein structure prediction is provided in 
 
@@ -71,7 +71,7 @@ Provide a file ($input_filename) in the required format. Example:
     observed GLU A 17 ASP A 44 long
 
 Type yes if you have used shorter links (BSG / 1,3-propaneamine). Type no if only BS3/DSS / 1,6-hexanediamine were used.
-If only BS3/DSS and / or 1,6-hexanediamine were used, column 7 can be omitted in the input file. 
+If only BS3/DSS and / or 1,6-hexanediamine were used, column 8 can be omitted in the input file. 
 
 
 [min] and [max] are defined based on the statistics of CATH S40 non redundant database. Their values are tabulated as follows:
