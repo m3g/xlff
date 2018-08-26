@@ -75,6 +75,7 @@ EtableFunc::read_data( std::istream& in ) {
 Real
 EtableFunc::func( Real const x ) const {
 	if (x >= max_ ) return (x - max_ );
+	else if ( x <= min_ ) return -2.5;
 	else {
 		Real index = ( x - min_ ) / stepsize_; // find appropriate index into func
 		Size x_lower_idx = (Size) (index);
@@ -91,6 +92,7 @@ Real
 EtableFunc::dfunc( Real const x ) const 
 {
 	if (x >= max_) return 1.0; // derivative of (x - xmax_);
+	else if ( x <= min_ ) return 0.0;
   	else {
   	Real index = ( x - min_ ) / stepsize_;
   	Size x_lower_idx = (Size) (index);
