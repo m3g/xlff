@@ -16,15 +16,16 @@
 # where the two last numbers (columns 4 and 5) are read and must
 # be the eucliean and topological distance of the pair.
 #
-# In the example, 
-# file1 = KK_CB.dat
+# In the examples, the files have names as 
+# file1 = ./data/KK_I_CB_t
 #
-# so, run with:  julia lmax.jl KK_CB.dat plot.pdf
+# so, run with:  julia lmax.jl ./data/KK_I_CB_t KK_lmax.pdf
 #
 # L. Martinez - IQ/UNICAMP; Sep 16, 2018
 #
 
 using PyPlot
+using LaTeXStrings
 using Printf
 
 let LmaxTest
