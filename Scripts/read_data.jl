@@ -6,8 +6,11 @@ function read_data(filename; cols=[1,2])
   file = open(filename)
   ndata = 0
   for line in eachline(file) 
-    if line[1:1] != "#"  # ignoring comment lines
-      ndata = ndata + 1
+    if ! isempty(strip(line))
+      line = lstrip(line)
+      if line[1:1] != "#" # ignoring comment lines
+        ndata = ndata + 1
+      end
     end
   end
   seek(file,0)
@@ -19,11 +22,14 @@ function read_data(filename; cols=[1,2])
   
   i = 0
   for line in eachline(file) 
-    if line[1:1] != "#"  # ignoring comment lines
-      i = i + 1
-      line_data = split(line)
-      x[i] = parse(Float64,line_data[cols[1]])
-      y[i] = parse(Float64,line_data[cols[2]])
+    if ! isempty(strip(line))
+      line = lstrip(line)
+      if line[1:1] != "#" # ignoring comment lines
+        i = i + 1
+        line_data = split(line)
+        x[i] = parse(Float64,line_data[cols[1]])
+        y[i] = parse(Float64,line_data[cols[2]])
+      end
     end
   end
   close(file)
