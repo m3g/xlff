@@ -76,7 +76,7 @@ let LmaxTest
   xlow = -0.1; xhigh = 1.1 ; x = [ xlow, xhigh ]
   for i in [100,99,95,90]
     y = [Lmax[i],Lmax[i]]; plot(x,y,"--",color="black",linewidth=0.5)
-    text(0.,Lmax[i]+0.1, @sprintf "%.2f" i/100.)
+    text(0.,Lmax[i]+0.1, @sprintf "f = %.2f / Lmax = %.1f" i/100. Lmax[i])
   end
   xlabel("Cutoff Fraction")
   ylabel("Lmax(Cutoff Fraction)")
