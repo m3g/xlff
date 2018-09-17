@@ -16,9 +16,9 @@
 # probably an error
 #
 # In the examples, the files have names as 
-# file1 = ./data/KK_I_CB_t
+# file1 = ./data/KK_l_CB_X_t
 #
-# so, run with:  julia lmax.jl ./data/KK_I_CB_t KK_lmax.pdf
+# so, run with:  julia lmax.jl ./data/KK_l_CB_X_t KK_lmax.pdf
 #
 # L. Martinez - IQ/UNICAMP; Sep 16, 2018
 #
