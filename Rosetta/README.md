@@ -1,10 +1,14 @@
-# Implementing statistical potential on Rosetta
+# Implementing statistical potential into Rosetta
 
 _Have a question? Some suggestion? Contact: ajrferrari@gmail.com_
 
-A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, 2018.
+*Referece*:
 
-Cite: https://doi.org/10.26434/chemrxiv.6030563.v1 (preprint version)
+
+A. Ferrari, F.C.Gozzo, L.Martínez, **Statistical potential for structural modeling using chemical cross-linking/mass spectrometry distance constraints**, Bioinformatics, 2019. 
+
+https://doi.org/10.1093/bioinformatics/btz013
+
 
 The statistical potential for cross-linking / mass spectrometry derived constraints is implement in Rosetta numerically. This is done by taking advantage on a constraint function called in Rosetta ETABLE. ETABLE describes any function as a table of values which can be interpolated in order to approximate the function true behavior (See General explanation below).
 
