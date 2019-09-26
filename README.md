@@ -8,9 +8,8 @@ http://leandro.iqm.unicamp.br/topolink/xlff.shtml
 
 **Statistical force-field for structural modeling using chemical cross-linking/mass spectrometry distance constraints**
 
-Allan J R Ferrari, Fabio C Gozzo, Leandro Martínez
-
-Bioinformatics, 2019, https://doi.org/10.1093/bioinformatics/btz013
-
+Allan J R Ferrari, Fabio C Gozzo, Leandro Martínez,
+Bioinformatics, 35 (17) 3005–3012.
+https://doi.org/10.1093/bioinformatics/btz013
 
 See wiki page for more details.
